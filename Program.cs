@@ -8,8 +8,9 @@ namespace Test
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Student student1 = new Student();
         }
     }
 }
