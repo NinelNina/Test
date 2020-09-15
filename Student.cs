@@ -29,6 +29,7 @@ namespace Test
             this.firstName = firstName;
             this.lastName = lastName;
             this.birthday = birthday;
+            balls = new List<byte>();
         }
 
         public double AverageCalc()
@@ -44,11 +45,11 @@ namespace Test
 
                 return Average;
             }
-            public byte AgeCalc()
-            {
-
-                return Age;
-            }
+        public byte AgeCalc()
+        {
+            Age = 20;
+            return Age;
         }
+    }
     
 }
