@@ -21,7 +21,19 @@ namespace Test
             public byte age;
             public Contacts contacts;
             public int[] balls = new int[5];
-            public double average;
+            public double Average { get; private set; }
+            public double AverageCalc()
+            {
+                int sum = 0;
+                for(int i = 0; i < 5; i++)
+                {
+                    sum += balls[i];
+                }
+
+                Average = sum / 5;
+
+                return Average;
+            }
         }
     }
 }
