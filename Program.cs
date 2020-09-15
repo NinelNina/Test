@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Test
 {
+    
     class Program
     {
         static void Main()
         {
-            Student student1 = new Student();
+            CLI.Welcome();
+
+            Student student = CLI.InputStudent();
+
+            Console.ReadKey();
         }
     }
 }
